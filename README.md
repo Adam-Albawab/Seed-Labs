@@ -64,5 +64,5 @@ The labs were completed as a part of the Secure Programming (CSE5382) course at 
 
 ## References
 
-1. http://www.cis.syr.edu/~wedu/Teaching/CompSec/labs.html
+1. https://mentis.uta.edu/dashboard/file/download/id/203087
 2. Computer Security: A Hands-on Approach by Wenliang Du 
