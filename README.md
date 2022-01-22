@@ -36,25 +36,23 @@ The labs were completed as a part of the Secure Programming (CSE5382) course at 
 3. **Shellshock Attack**
 >*Description:* In this attack we launched the shellshock attack on a remote web server and then gained the reverse shell by exploiting the vulnerability.
 
-4. **Race Condition Vulnerability**
->*Description:* A race condition occurs when multiple processes access and manipulate the same data concurrently, and the outcome of the execution depends on the particular order in which the access takes place. If a privileged program has a race-condition vulnerability, attackers can run a parallel process to “race” against the privileged program, with an intention to change the behaviors of the program. The task is to exploit this vulnerability and gain root privilege.
+4. **Return to Libc Attack**
+>*Description:* A variant of buffer-overflow attack called Return-to-libc, which does not need an executable stack; it does not even use shellcode. Instead, it causes the vulnerable program to jump to some existing code, such as the system() function in the libc library, which is already loaded into a process’s memory space. Thus bypassing an existing protection scheme currently implemented in major Linux operating systems.
 
-5. **Dirty COW Attack**
->*Description:* A case of race condition vulnerability that affected Linux-based operating systems and Android. We launch this attack to modify /etc/passwd file - which should not be modified without appropriate privileges and methods.
-
-6. **Meltdown and Spectre Attack**
->*Description:* In both of these attacks, we exploit the vulnerability in the hardware protection mechanism implemented in most CPUs. Since the flaw exists in the hardware, it is very difficult to fundamentally fix the problem, unless we change the CPUs in our computers. These two attacks demonstrate the exploitation and give a greater depth of understanding in hardware security.
-
-7. **Format String Vulnerability**
+5. **Format String Vulnerability**
 >*Description:* The format-string vulnerability is caused by code like printf(user input), where the contents of the variable of user input are provided by users. When this program is running with privileges (e.g., Set-UID program), this printf statement becomes dangerous, because it can lead to one of the following consequences: (1) crash the program, (2) read from an arbitrary memory place, and (3) modify the values of in an arbitrary memory place. The last consequence is very dangerous because it can allow users to modify internal variables of a privileged program, and thus change the behavior of the program. The task is to develop a scheme to exploit the vulnerability.
 
-8. **Cross-Site Request Forgery Attack**
+6. **Race Condition Vulnerability**
+>*Description:* A race condition occurs when multiple processes access and manipulate the same data concurrently, and the outcome of the execution depends on the particular order in which the access takes place. If a privileged program has a race-condition vulnerability, attackers can run a parallel process to “race” against the privileged program, with an intention to change the behaviors of the program. The task is to exploit this vulnerability and gain root privilege.
+
+
+7. **Cross-Site Request Forgery Attack**
 >*Description:* In this lab, we will be attacking a social networking web application using the CSRF attack. The open-source social networking application called Elgg has countermeasures against CSRF, but we have turned them off for this lab. We also study the most common countermeasures of this attack.
 
-9. **Cross Site Scripting Attack**
+8. **Cross Site Scripting Attack**
 >*Description:* In this lab, we need to exploit this vulnerability to launch an XSS attack on the modified Elgg, in a way that is similar to what Samy Kamkar did to MySpace in 2005 through the notorious Samy worm. The ultimate goal of this attack is to spread an XSS worm among the users, such that whoever views an infected user profile will be infected, and whoever is infected will add you (i.e., the attacker) to his/her friend list.
 
-10. **SQL injection Attack**
+9. **SQL injection Attack**
 >*Description:* In this lab, we have created a web application that is vulnerable to the SQL injection attack. Our web application includes the common mistakes made by many web developers. Our goal is to find ways to exploit the SQL injection vulnerabilities, demonstrate the damage that can be achieved by the attack, and master the techniques that can help defend against such type of attacks.
 
 ## Key Learnings
